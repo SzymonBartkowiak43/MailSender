@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MailSenderApplication {
 
+
+// czytanje o multiserwisach i rabicie u bykowksiego
     public static void main(String[] args) {
         SpringApplication.run(MailSenderApplication.class, args);
     }
