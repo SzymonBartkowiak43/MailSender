@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${subject}"></h1>
+    <p>
+        Thank you for choosing our service: <strong th:text="${offerName}"></strong>.
+    </p>
+    <p>
+        Please arrive at: <strong th:text="${time}"></strong>.
+    </p>
+    <p>
+        Have a nice day!<br>
+        <strong th:text="${company}"></strong>
+    </p>
+    <div class="footer">
+        <p>This is an automated message, please do not reply.</p>
+    </div>
+</div>
+</body>
+</html>
