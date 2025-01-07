@@ -15,9 +15,11 @@ spring:
 
   data:
     mongodb:
-      auto-index-creation: true
-      uri: mongodb://root:example@localhost:27017/mails
-
+      host: localhost
+      port: 27017
+      database: mailSender
+      username: mailSender
+      password: fnwM<Sj^%CDyc@
   mvc:
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
