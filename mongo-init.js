@@ -1,7 +1,7 @@
 db.createUser(
     {
-        user: "mailSender",
-        pwd: "fnwM<Sj^%CDyc@",
+        user: "root",
+        pwd: "IAmUnsecure!",
         roles: [
             {
                 role: "readWrite",
